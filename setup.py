@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="jaxlie",
-    version="1.2.9",
+    version="1.2.10",
     description="Matrix Lie groups in Jax",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -26,9 +26,9 @@ setup(
     extras_require={
         "testing": [
             "flax",
-            "hypothesis",
             "hypothesis[numpy]",
             "pytest",
+            "pytest-xdist[psutil]",
             "pytest-cov",
         ]
     },
